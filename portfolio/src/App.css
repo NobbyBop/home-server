@@ -1,0 +1,188 @@
+@import "css/Home.css";
+@import "css/Art.css";
+@import "css/Sketchbook.css";
+@import "css/Attention.css";
+@import "css/Photography.css";
+@import "css/Mobius.css";
+
+:root {
+  --scrollcolor: red;
+}
+/* DESKTOP (GENERAL) */
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  /* background-color: white; */
+}
+body.photography-bg {
+  background-color: white;
+}
+
+body.default-bg {
+  background-color: white;
+}
+
+body.landing-bg {
+  background-color: white;
+}
+
+/* LANDING */
+.landingContainer {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  /* gap: 5%; */
+}
+
+.landingSubtitle {
+  text-decoration: italic;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  background: inherit;
+  border: none;
+}
+
+button:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+/* NAVIGATION */
+.navContainer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  /* gap: 5%; */
+  border-bottom: solid 1.5px black;
+  /* padding-bottom: 1%; */
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navBarDiv {
+  width: 100%;
+}
+.navLink {
+  margin-right: 20px;
+  font-size: large;
+  color: black;
+}
+.active-navLink {
+  margin-right: 20px;
+  font-size: large;
+  color: blue;
+}
+.navLink:visited,
+.headerNavLink:visited {
+  color: black;
+}
+.navLink:hover {
+  color: gray;
+  text-decoration: underline;
+}
+.active-navLink:hover {
+  color: gray;
+  text-decoration: underline;
+}
+a:visited {
+  color: blue;
+}
+a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+.headerNavLink {
+  color: black;
+  text-decoration: none;
+}
+.navLink:last-child,
+.active-navLink:last-child {
+  margin-right: 0;
+}
+
+/* WIP */
+.wipDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*SCROLLING */
+.scrolling-text {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.scrolling-textB {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+}
+
+.scrolling-text-innerA {
+  display: inline-block;
+  animation: scrollA 7s linear infinite;
+  color: var(--scrollcolor);
+}
+
+.scrolling-text-innerB {
+  display: inline-block;
+  animation: scrollB 7s linear infinite;
+  color: var(--scrollcolor);
+}
+
+.scrolling-text-innerC {
+  display: inline-block;
+  animation: scrollC 5s linear infinite;
+  color: var(--scrollcolor);
+}
+
+@keyframes scrollA {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollB {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollC {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}

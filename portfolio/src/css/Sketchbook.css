@@ -1,0 +1,74 @@
+.sketchContainer {
+  /* padding-top: 5%; */
+  width: 100%;
+  max-width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 5%;
+}
+
+.sketchOuterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sketchImage {
+  width: 100%;
+  /* max-width: 20%; */
+}
+
+.sketchDiv {
+  text-align: center;
+  padding: 1%;
+  border: solid 1.5px black;
+}
+
+.sketchDiv h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.sketchTitle {
+  max-width: 70%;
+}
+
+.sketchTitle h2 {
+  padding-top: 1%;
+  margin: 0;
+  margin-bottom: 1%;
+}
+
+.sketchTitle p {
+  font-size: large;
+  max-width: 80%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1%;
+}
+
+@media screen and (max-width: 800px) {
+  .sketchContainer {
+    /* padding-top: 5%; */
+    width: 100%;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 5%;
+  }
+  .sketchTitle {
+    max-width: 90%;
+  }
+  .sketchTitle p {
+    font-size: small;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3%;
+  }
+}
