@@ -1,3 +1,6 @@
 node_modules
 dist
 .claude
+
+etc_letsencrypt.zip
+lib_letsencrypt.zip
